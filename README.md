@@ -32,7 +32,7 @@ Then, you will need to input the tickers you want in your portfolio. The program
 <img src="https://i.imgur.com/rIDMSXD.png" height="80%" width="80%" />
 
 <b>Step 3:</b> 
-Finally, the stock will output yoru expected account value after n years. It will also display your expected yearly devidend income. This is not a particulary complex code, check the source code for a slightly mroe detailed explanation of the inner working of this program.
+Finally, the stock will output your expected account value after n years. It will also display your expected yearly dividend income. This is not a particularly complex program. Check the source code for a slightly more detailed explanation of the inner workings of this program.
 
 <img src="https://i.imgur.com/x9vGk3R.png" height="80%" width="80%" />
 

@@ -36,7 +36,8 @@ def main():
             print('\nRound to the nearest whole dollar, do not put any commas,'
                   '\nand make sure you only enter integers.\n')
 
-    # iterate through tickers and calculate yearly gain
+    # iterate through tickers and calculate yearly gain by passing variables to the stock class and utilizing
+    # calculate_average_return and calculate_total methods
     total_return = 0
     total_div = 0
     for i in range(tick_num):
@@ -122,11 +123,11 @@ class Stock:
         avg_return = sum(returns) / len(returns)
         return avg_return
 
-    # calculates the total gain over time for this particular stock
-    # takes the years user wants to invest, how much they would like to invest a year,
-    # and then uses a for loop to iterate in the range of years calculating the yearly gain
-    # and appending it to the total variable
     def calculate_total(self):
+        # calculates the total gain over time for this particular stock
+        # takes the years user wants to invest, how much they would like to invest a year,
+        # and then uses a for loop to iterate in the range of years calculating the yearly gain
+        # and appending it to the total variable
         total = 0
         num_shares = 0
         for i in range(self.years):

@@ -1,56 +1,43 @@
-<h1>Simple</h1>
+<h1>Portfolio Return Calculator</h1>
 
-<h2>Description</h2>
-Project consists of a simple PowerShell script that walks the user through "zeroing out" (wiping) any drives that are connected to the system. The utility allows you to select the target disk and choose the number of passes that are performed. The PowerShell script will configure a diskpart script file based on the user's selections and then launch Diskpart to perform the disk sanitization.
-<br />
+## Description
+The program asks the user to create a hypothetical portfolio and then calculates the projected  market value of said portfolio over a specific period of time specified by the user. This program was originally made to give me better insight when planning my investments. Past returns don't guarantee future results, but they can still provide valuable information when no other data is present. It should be noted that this calculation (falsely) assumes no changes in dividend yield over time, and the stock's average annual return will remain constant over the years. Take these figures with a grain of salt.
 
+## Languages and Utilities Used
 
-<h2>Languages and Utilities Used</h2>
+- <b>Python</b> 
+- <b>Pycharm 2023.2.1 Community</b>
 
-- <b>PowerShell</b> 
-- <b>Diskpart</b>
+## Packages used
+
+- yfinance
+- time
 
 <h2>Environments Used </h2>
 
 - <b>Windows 10</b> (21H2)
 
-<h2>Program walk-through:</h2>
+## Program walk-through:
+<b>Launch Program:</b> 
+ The program can be launched by simply downloading the code and running it through your cmd (assuming path variables are set correctly and you are in the correct directory) or any IDE.
 
-<p align="center">
-Launch the utility: <br/>
-<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Select the disk:  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Enter the number of passes: <br/>
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Confirm your selection:  <br/>
-<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Wait for process to complete (may take some time):  <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Sanitization complete:  <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+<b>Step 1:</b>  
+The program will ask you to input the number of assets you want in your portfolio, how many years you would like to invest, and how much money you plan to put toward your monthly investments.
 
-<!--
- ```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
-```
---!>
+<img src="https://i.imgur.com/8PaoVGL.png" height="80%" width="80%" />
+
+<b>Step 2</b> 
+Then, you will need to input the tickers you want in your portfolio. The program will output the annual dividend amount per share and the stock's current price. It will continue this until it reaches the amount of assets you specified earlier.
+
+<img src="https://i.imgur.com/rIDMSXD.png" height="80%" width="80%" />
+
+<b>Step 3:</b> 
+Finally, the stock will output yoru expected account value after n years. It will also display your expected yearly devidend income. This is not a particulary complex code, check the source code for a slightly mroe detailed explanation of the inner working of this program.
+
+<img src="https://i.imgur.com/x9vGk3R.png" height="80%" width="80%" />
+
+## Documentation
+
+[yfinance package](https://pypi.org/project/yfinance/)
+
+[time](https://docs.python.org/3/library/time.html)

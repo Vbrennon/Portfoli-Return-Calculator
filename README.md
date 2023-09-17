@@ -40,4 +40,4 @@ Finally, the stock will output yoru expected account value after n years. It wil
 
 [yfinance package](https://pypi.org/project/yfinance/)
 
-[time](https://docs.python.org/3/library/time.html)
+[time package](https://docs.python.org/3/library/time.html)
